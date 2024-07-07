@@ -38,6 +38,12 @@ CAT~CAT
 ### Descriptive Results 
 
 #### Graphical Results 
+```{r}
+males=filter(FinalData,FinalData$sex=="M")
+barchartGC(~treatment + infected,data=males)
+barchartGC(~infected + treatment,data=males,type="percent")
+
+```
 
 #### Numerical Results 
 
