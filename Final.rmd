@@ -50,6 +50,12 @@ barchartGC(~infected + treatment,data=males,type="percent")
 
 
 #### Numerical Results 
+```{r}
+table1 <- xtabs(~treatment + infected,data=males)
+rowPerc(table1)
+colPerc(table1)
+```
+This shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19 
 
 #### Inferential Results 
 
