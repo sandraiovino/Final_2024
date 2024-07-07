@@ -59,6 +59,13 @@ This shows that about 74% males who took the placebo got covid19, where about 26
 
 #### Inferential Results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+When running the Chi-squared we get a pvalue of .0000000000000002 which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in males 
+
 #### Conclusion 
 
 
@@ -94,6 +101,14 @@ $H_A$: The Covid921 vaccine is effective in LGBTQ  Community
 
 #### Graphical Results 
 
+```{r}
+
+LGBTQ=filter(FinalData,FinalData$LGBTQ=="s")
+barchartGC(~treatment + infected,data=strai)
+barchartGC(~infected + treatment,data=FinalData,type="percent")
+
+```
+
 #### Numerical Results 
 
 #### Inferential Results 
@@ -122,4 +137,4 @@ $H_A$: The Covid921 vaccine is effective in Drug users
 
 
 
-# Overall Results and Conclusions
+
