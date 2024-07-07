@@ -44,6 +44,10 @@ barchartGC(~treatment + infected,data=males)
 barchartGC(~infected + treatment,data=males,type="percent")
 
 ```
+ 
+ This chart shows that males who got the actual vaccines are less likely to get Covid921,   
+ than those who got the placebo vaccine.       
+
 
 #### Numerical Results 
 
