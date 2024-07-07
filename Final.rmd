@@ -30,7 +30,10 @@ $H_0$: The Covid921 vaccine is not effective in males
 $H_A$: The Covid921 vaccine is effective in males   
 
 ### Methods 
-
+treatment will be Cat   
+sex will be Cat   
+helper file we are using is   
+CAT~CAT   
 
 ### Descriptive Results 
 
