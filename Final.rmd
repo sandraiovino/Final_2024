@@ -66,6 +66,9 @@ fisher.test(table1)
 ```
 When running the Chi-squared we get a pvalue of .0000000000000002 which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in males 
 
+When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
+The odds 
+
 #### Conclusion 
 
 
