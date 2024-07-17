@@ -67,9 +67,12 @@ fisher.test(table1)
 When running the Chi-squared we get a pvalue of .0000000000000002 which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in males 
 
 When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
+
 The odds 
 
 #### Conclusion 
+
+Our question was to find if the Covid19 is effected in males or not effective in males. When doing our graphical result it shows that males who got the covid vaccines are less likely to get covid then those who got Placebo. When indicating the numerical results, it shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19. We ran the Chi-square and got the Pvalue of .0000000000000002 which is less than .05. This indicates that we reject the null hypothesis. When doing the fisher test we came out with the same hypothesis as the chi-sqr. There for we reject the null hypothesis again. We conclude that taking the covid19 vaccine is effective in males. 
 
 
 
@@ -104,13 +107,6 @@ $H_A$: The Covid921 vaccine is effective in LGBTQ  Community
 
 #### Graphical Results 
 
-```{r}
-
-LGBTQ=filter(FinalData,FinalData$LGBTQ=="s")
-barchartGC(~treatment + infected,data=strai)
-barchartGC(~infected + treatment,data=FinalData,type="percent")
-
-```
 
 #### Numerical Results 
 
