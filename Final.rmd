@@ -68,7 +68,7 @@ When running the Chi-squared we get a pvalue of .0000000000000002 which is less 
 
 When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
 
-The odds 
+The odds ratio would be 2.81 : 1 
 
 #### Conclusion 
 
@@ -84,8 +84,10 @@ $H_0$: The Covid921 vaccine is not effective in females
 $H_A$: The Covid921 vaccine is effective in females
 
 ### Methods 
-Females is  CAT  
-Treatment is CAT   
+Females is CAT    
+Treatment is CAT     
+Helper File we use  
+ CAT ~ CAT   
 
 ### Descriptive Results 
 
@@ -101,7 +103,8 @@ barchartGC(~infected + treatment,data=females,type="percent")
 This chart shows that females who got the actual vaccines are less likely to get Covid921,   
  than those who got the placebo vaccine.  
  
- 
+#### Numerical Results 
+
 #### Inferential Results 
 
 #### Conclusion 
