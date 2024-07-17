@@ -84,11 +84,24 @@ $H_0$: The Covid921 vaccine is not effective in females
 $H_A$: The Covid921 vaccine is effective in females
 
 ### Methods 
+Females is  CAT  
+Treatment is CAT   
 
 ### Descriptive Results 
 
 #### Graphical Results 
 
+```{r}
+females=filter(FinalData,FinalData$sex=="F")
+barchartGC(~treatment + infected,data=females)
+barchartGC(~infected + treatment,data=females,type="percent")
+
+```
+
+This chart shows that females who got the actual vaccines are less likely to get Covid921,   
+ than those who got the placebo vaccine.  
+ 
+ 
 #### Inferential Results 
 
 #### Conclusion 
