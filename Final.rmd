@@ -68,7 +68,7 @@ When running the Chi-squared we get a pvalue of .0000000000000002 which is less 
 
 When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
 
-The odds ratio would be 2.81 : 1 
+The odds ratio would be 2.81 : 1, which means that their is a 2.81 is more likely to get to get when taking placebo, than those who are 1 times more likely to get covid  when taking the vaccines.   
 
 #### Conclusion 
 
@@ -105,6 +105,13 @@ This chart shows that females who got the actual vaccines are less likely to get
  
 #### Numerical Results 
 
+```{r}
+table1 <- xtabs(~treatment + infected,data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+ When doing the numerical results it shows that about 65% of women who got placebos are more likely to get Covid19 than those who actually got the vaccines which was about 35% of women. 
+ 
 #### Inferential Results 
 
 #### Conclusion 
