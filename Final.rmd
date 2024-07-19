@@ -157,7 +157,7 @@ barchartGC(~infected + treatment,data=LGBTQ)
 barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
-
+ When running this bar graph it shows that participant who are LGBTQ and are on the placebo are morelikely to get covid19 then  
 
 
 #### Numerical Results 
