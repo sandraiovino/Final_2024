@@ -111,7 +111,7 @@ colPerc(table1)
 ```
  When doing the numerical results it shows that out of the 100% about 65% of women who got placebos are more likely to get Covid19 than those who actually got the vaccines which was about 35% of women.  
  
- Out of the 100% of both vaccinated and placebo famles  both were about 50/50 where ok. 
+ Out of the 100% of both vaccinated and placebo females both were about 50/50 okay. 
  
 #### Inferential Results 
 
@@ -128,7 +128,7 @@ When running the fisher Exact test it shows that the Pvalue is also smaller than
 When calculating the odds ratio 1.86:1 is more likely to get covid when taking placebo, than those who are 1 times more likely to get covid when taking the vaccines.
 
 #### Conclusion 
- Our objective was to check if the vaccine was effective with females or not effective with females. When running the graph data that shows it showed that females who where on placebo where more likely to get covid 19 than those who got the vaccines. Out of all the females who got the vaccine and the placebo about 50% of them were okay. We ran our numerical charts which shows that 65% of females on placebo are more likely to get covid then 35% of the females who got the vaccine. 
+ Our objective was to check if the vaccine was effective with females or not effective with females. When running the graph data that shows it showed that females who where on placebo where more likely to get covid 19 than those who got the vaccines. Out of all the females who got the vaccine and the placebo about 50% of them were okay. We ran our numerical charts which shows that 65% of females on placebo are more likely to get covid then 35% of the females who got the vaccinated. When running our chi square and fisher test we concluded that because our Pvalue was smaller than 0.05 we reject the null hypothesis that Covid921 vaccine is not effective in females. Inconclusion The Covid921 vaccines is effective in females.  
 
 ## LGBTQ
 $H_0$: The Covid921 vaccine is not effective in LGBTQ Community 
