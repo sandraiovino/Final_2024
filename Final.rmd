@@ -191,8 +191,9 @@ DrugUser = filter(FinalData, DrugUser == "yes")
 #### Graphical Results 
 
 ```{r}
-barchartGC(~infected + treatment,data=DrugUser)
-barchartGC(~infected + treatment,data=DrugUser, type="percent")
+DrugUser=filter(FinalData,FinalData $DrugUser =="yes")
+barchartGC(~ infected+treatment ,data=DrugUser)
+barchartGC(~treatment + infected  ,data=DrugUser,type="percent")
 
 ```
 
