@@ -84,11 +84,10 @@ $H_0$: The Covid921 vaccine is not effective in females
 $H_A$: The Covid921 vaccine is effective in females
 
 ### Methods 
-Females is CAT    
-Treatment is CAT     
-Helper File we use  
- CAT ~ CAT   
-
+treatment will be Cat   
+infected will be Cat   
+helper file we are using is   
+CAT~CAT 
 ### Descriptive Results 
 
 #### Graphical Results 
@@ -136,6 +135,11 @@ LGBTQ = filter(FinalData, LGBTQ == "gay")
 
 
 ### Methods 
+
+treatment will be Cat   
+infected will be Cat   
+helper file we are using is   
+CAT~CAT 
 
 ### Descriptive Results 
 
@@ -185,6 +189,11 @@ DrugUser = filter(FinalData, DrugUser == "yes")
 
 
 ### Methods 
+
+treatment will be Cat   
+infected will be Cat   
+helper file we are using is   
+CAT~CAT 
 
 ### Descriptive Results 
 
