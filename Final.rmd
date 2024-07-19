@@ -119,6 +119,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+When running the chi- sqr it states that the Pvalue is 1.914e-08. This will calculate to .00000001914. This means that we reject our null hypothesis because it was less than 0.05.This mean that there is a difference in women who use vaccines. 
+
+When running the fisherExact test it shows that the Pvalue is also smaller than 0.05. Our Pvlue comes out to .00000001246 
+
 #### Conclusion 
 
 
