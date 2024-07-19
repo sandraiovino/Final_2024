@@ -31,7 +31,7 @@ $H_A$: The Covid921 vaccine is effective in males
 
 ### Methods 
 treatment will be Cat   
-sex will be Cat   
+infected will be Cat   
 helper file we are using is   
 CAT~CAT   
 
@@ -68,7 +68,7 @@ When running the Chi-squared we get a pvalue of .0000000000000002 which is less 
 
 When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
 
-The odds ratio would be 2.81 : 1, which means that their is a 2.81 is more likely to get to get when taking placebo, than those who are 1 times more likely to get covid  when taking the vaccines.   
+The odds ratio would be 2.81 : 1, which means that their is a 2.81 is more likely to get when taking placebo, than those who are 1 times more likely to get covid  when taking the vaccines.   
 
 #### Conclusion 
 
@@ -114,6 +114,12 @@ colPerc(table1)
  
 #### Inferential Results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
 #### Conclusion 
 
 
@@ -124,6 +130,11 @@ $H_0$: The Covid921 vaccine is not effective in LGBTQ Community
 
 $H_A$: The Covid921 vaccine is effective in LGBTQ  Community 
 
+```{r}
+LGBTQ = filter(FinalData, LGBTQ == "gay")
+```
+
+
 ### Methods 
 
 ### Descriptive Results 
@@ -131,9 +142,32 @@ $H_A$: The Covid921 vaccine is effective in LGBTQ  Community
 #### Graphical Results 
 
 
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+
+```
+
+
+
 #### Numerical Results 
 
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
 #### Inferential Results 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
 
 #### Conclusion 
 
@@ -145,15 +179,46 @@ $H_0$: The Covid921 vaccine is not effective in Drug users
 
 $H_A$: The Covid921 vaccine is effective in Drug users  
 
+```{r}
+DrugUser = filter(FinalData, DrugUser == "yes")
+```
+
+
 ### Methods 
 
 ### Descriptive Results 
 
 #### Graphical Results 
 
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+
+```
+
+
+
 #### Numerical Results 
 
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
 #### Inferential Results 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+
+
+
 
 #### Conclusion 
 
