@@ -228,8 +228,7 @@ table1 <- xtabs(~treatment +infected , data=DrugUser)
 rowPerc(table1)
 colPerc(table1)
 ```
-
-
+The Numerical Results shows that out of the 100%, 92% of the DrugUsers got more covid19 than the 8%  who where on the placebo.
 
 
 #### Inferential Results 
