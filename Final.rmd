@@ -239,6 +239,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+When running the Chi-squared we get a pvalue of .0000000001,  which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in DrugUsers.
+
+When running the Fisher Exact test we have a Pvalue of .000000000003 which is also less than 0.05. 
+
+The odds ratio would be 0.9 : 1, which means that their is a 0.9 times more likely to get covid19 when taking placebo, than those who are 1 times more likely to get covid  when taking the vaccines.   
 
 
 
