@@ -246,10 +246,9 @@ When running the Fisher Exact test we have a Pvalue of .000000000003 which is al
 The odds ratio would be 0.9 : 1, which means that their is a 0.9 times more likely to get covid19 when taking placebo, than those who are 1 times more likely to get covid  when taking the vaccines.   
 
 
-
-
 #### Conclusion 
 
+Our job was to find if the $H_0$: The Covid921 vaccine is not effective in DrugUsers. When running the graphical results it shows that DrugUsers who got the covid 19 vaccines are more likely to get covid19 then those who took the Placebo. Now, when running the numerical results, it also stated that 92% of DrguUsers who got the covid19 vaccine are more likely to get covid19. When seeing the placebo data it show that about only 8% of DrugUsers got covid 19. When Running the chia and fisher test we got a Pvalue that is smaller than 0.05, so we reject our null Hypothesis Covid921 vaccine is not effective in DrugUsers. Our final conclusion shows that Covid921 vaccine is effective in DrugUsers. It looks like the DrugUsers who got the covid vaccines are actually getting more sick then those who got the placebo. 
 
 
 
