@@ -218,16 +218,17 @@ barchartGC(~infected + treatment,data=DrugUser,type="percent")
 
 ```
 
-  When running graphical results it shows that out of the Druguser,
+  When running graphical results it shows that 97% of the DrugUsers who took the covid19 Vaccine are most likely to get covid 19 than those who took the placebo which would be about 10% of the DrugUsers.   
 
 
 #### Numerical Results 
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=DrugUser)
+table1 <- xtabs(~treatment +infected , data=DrugUser)
 rowPerc(table1)
 colPerc(table1)
 ```
+
 
 
 
