@@ -46,7 +46,7 @@ barchartGC(~infected + treatment,data=males,type="percent")
 ```
  
  This chart shows that males who got the actual vaccines are less likely to get Covid921,   
- than those who got the placebo vaccine.  Out of those who got placebo and the vaccine about 50% where ok. 
+ than those who got the placebo vaccine.  Out of those who got placebo and the vaccine about 50% were OK. 
 
 
 #### Numerical Results 
@@ -55,7 +55,7 @@ table1 <- xtabs(~treatment + infected,data=males)
 rowPerc(table1)
 colPerc(table1)
 ```
-This shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19 
+This shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19. Out of the 100% that were okay about 50/50 were placebo and vaccines 
 
 #### Inferential Results 
 
@@ -128,7 +128,7 @@ When running the fisher Exact test it shows that the Pvalue is also smaller than
 When calculating the odds ratio 1.86:1 is more likely to get covid when taking placebo, than those who are 1 times more likely to get covid when taking the vaccines.
 
 #### Conclusion 
- Our objective was to check if the vaccine was effective with females or not effective with females. When running the graph data that shows it showed that females who where on placebo where more likely to get covid 19 than those who got the vaccines. Out of all the females who got the vaccine and the placebo about 50% of them were okay. We ran our numerical charts which shows that 65% of females on placebo are more likely to get covid then 35% of the females who got the vaccinated. When running our chi square and fisher test we concluded that because our Pvalue was smaller than 0.05 we reject the null hypothesis that Covid921 vaccine is not effective in females. Inconclusion The Covid921 vaccines is effective in females.  
+ Our objective was to check if the vaccine was effective with females or not effective with females. When running the graph data that shows it showed that females who where on placebo where more likely to get covid 19 than those who got the vaccines. Out of all the females who got the vaccine and the placebo about 50% of them were okay. We ran our numerical charts which shows that 65% of females on placebo are more likely to get covid921 then 35% of the females who got the vaccinated. When running our chi square and fisher test we concluded that because our Pvalue was smaller than 0.05 we reject the null hypothesis that Covid921 vaccine is not effective in females. In conclusion The Covid921 vaccines is effective in females.  
 
 ## LGBTQ
 $H_0$: The Covid921 vaccine is not effective in LGBTQ Community 
@@ -157,19 +157,22 @@ barchartGC(~infected + treatment,data=LGBTQ)
 barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
- When running this bar graph it shows that participant who are LGBTQ and are on the placebo are morelikely to get covid19 then  
+ 
+ When running this bar graph it shows that participant who are LGBTQ and are on the placebo are more likely to get covid19 then those who took the vaccines covid19. Out of both placebo and vaccine  it looks like about 47% of placebo were okay and about 50% of vaccines were okay.    
 
 
 #### Numerical Results 
 
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=LGBTQ)
+table1 <- xtabs(~ treatment+infected , data=LGBTQ)
 rowPerc(table1)
 colPerc(table1)
 ```
-
-
+When doing the numerical results it shows that out of the 100% about 80% of LGBTQ people who got placebos are more likely to get Covid921 than those who actually got the vaccines which was about 20% of LGTBQ.  
+ 
+ Out of the 100% about 48.33% that were placebo were okay and 51.67% that were vaccines were OK.   
+ 
 #### Inferential Results 
 
 ```{r}
@@ -177,11 +180,15 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+When running the chi- sqr it states that the Pvalue is 2.266e-06. This will calculate to .000002266. This means that we reject our null hypothesis because it was less than 0.05.This mean that there is a difference in the LGBTQ community who use vaccines.   
+
+When running the fisher Exact test it shows that the Pvalue is also smaller than 0.05. Our Pvalue comes out to .00000007269, therefor we reject the null hypothesis. 
+When calculating the odds ratio 4.27:1, 4.27 times is more likely to get covid when taking placebo, than those who are 1 times more likely to get covid when taking the vaccines.
 
 
 #### Conclusion 
 
-
+Our job was to find if the $H_0$: The Covid921 vaccine is not effective in LGBTQ Community. When running the graphical results it shows that participant who are in the LGBTQ community are most likely to get covid19 than those who got the covid19 vaccine. When running the numerical results it shows that  out od the 100% about 80% the LGBTQ community who are on placebo are most likely to get covid19 then those 20% of participates who are LGBTQ who got the covid19 vaccine. When running the P value for both fisher and chi- Square, we conclude that both Pvalues are smaller than 0.05. This mean that we reject our null hypothesis and conclude that Covid921 vaccine is effective in the LGBTQ community.  
 
 ## DrugUser
 
@@ -204,14 +211,14 @@ CAT~CAT
 ### Descriptive Results 
 
 #### Graphical Results 
-
 ```{r}
-DrugUser=filter(FinalData,FinalData $DrugUser =="yes")
-barchartGC(~ infected+treatment ,data=DrugUser)
-barchartGC(~treatment + infected  ,data=DrugUser,type="percent")
+DrugUser=filter(FinalData,FinalData$DrugUser=="yes")
+barchartGC(~treatment + infected,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser,type="percent")
 
 ```
 
+  When running graphical results it shows that out of the Druguser,
 
 
 #### Numerical Results 
