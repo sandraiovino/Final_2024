@@ -1,12 +1,12 @@
 ---
 title: "Covid91 vaccine study Final2024"
-author: "Put your name here!"
+author: "Sandra Iovino !"
 output: 
   html_document:
     number_sections: true
     toc: true
     toc_depth: 5
-date: "`r Sys.Date()`" 
+date:  8/1/2024 "`r Sys.Date()`" 
 ---
 
 ```{r include=FALSE,echo=FALSE}
@@ -64,7 +64,7 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-When running the Chi-squared we get a pvalue of .0000000000000002 which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in males 
+When running the Chi-squared we gott a pvalue of .0000000000000002 which is less than 0.05. This means that we reject the null hypothesis that Covid921 vaccine is not effective in males. We conclude that Covid921 vaccine is effective in males.
 
 When running the Fisher Exact test we have .0000000000000002 which is also less than 0.05. 
 
@@ -72,7 +72,7 @@ The odds ratio would be 2.81 : 1, which means that their is a 2.81 times more li
 
 #### Conclusion 
 
-Our question was to find if the Covid19 is effected in males or not effective in males. When doing our graphical result it shows that males who got the covid19 vaccines are less likely to get covid19 then those who got Placebo. When indicating the numerical results, it shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19. We ran the Chi-square and got the Pvalue of .0000000000000002 which is less than 0.05. This indicates that we reject the null hypothesis. When doing the fisher test we came out with the same hypothesis as the chi-sqr. There for we reject the null hypothesis again. We conclude that taking the covid19 vaccine is effective in males. 
+Our question was to find if the Covid19 is effected in males or not effective in males. When doing our graphical result it shows that males who got the covid19 vaccines are less likely to get covid19 then those who got Placebo. When indicating the numerical results, it shows that about 74% males who took the placebo got covid19, where about 26% of males who got the vaccines got covid19. We ran the Chi-square and  got the Pvalue of .0000000000000002 which is less than 0.05. This indicates that we reject the null hypothesis. When doing the fisher test we came out with the same hypothesis as the chi-sqr. There for we reject the null hypothesis again. We conclude that taking the covid19 vaccine is effective in males. 
 
 ## Females
 
